@@ -1,0 +1,11 @@
+{
+  "tests": 7,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "sha256": {
+    "all-in-one": "3e2ce8b0c95fc8c048756d36fa7f5b5ae9586b783677056b1f8b90676078c89a",
+    "cpu-only": "46ca7a6b92cfa8551cbbd1986893cb2db9c00a2b6da1b667b689d9efcb26221c",
+    "testing": "8c31839b0c6647d07b9c97da3ced0678c83d2585be0662a3f5ff0e7a8457d0f8"
+  }
+}

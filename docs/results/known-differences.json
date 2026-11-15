@@ -1,0 +1,114 @@
+[
+  {
+    "case": "collapsed percentile",
+    "bits": 8,
+    "stage": "MSRCP",
+    "max_abs": 235.0,
+    "mean_abs": 16.003802083333333
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 8,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 5.0,
+    "mean_abs": 0.000625
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 8,
+    "stage": "MSRCP",
+    "max_abs": 110.0,
+    "mean_abs": 57.29636533084809
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 8,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 143.0,
+    "mean_abs": 38.108108108108105
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 10,
+    "stage": "MSRCP",
+    "max_abs": 940.0,
+    "mean_abs": 64.01520833333333
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 10,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 19.0,
+    "mean_abs": 0.0029861111111111113
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 10,
+    "stage": "MSRCP",
+    "max_abs": 0.0,
+    "mean_abs": 0.0
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 10,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 0.0,
+    "mean_abs": 0.0
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 12,
+    "stage": "MSRCP",
+    "max_abs": 3760.0,
+    "mean_abs": 256.06083333333333
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 12,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 75.0,
+    "mean_abs": 0.011875
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 12,
+    "stage": "MSRCP",
+    "max_abs": 1752.0,
+    "mean_abs": 801.75302889096
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 12,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 1584.0,
+    "mean_abs": 303.4352283317801
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 16,
+    "stage": "MSRCP",
+    "max_abs": 60160.0,
+    "mean_abs": 4096.973333333333
+  },
+  {
+    "case": "collapsed percentile",
+    "bits": 16,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 1194.0,
+    "mean_abs": 0.18958333333333333
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 16,
+    "stage": "MSRCP",
+    "max_abs": 28032.0,
+    "mean_abs": 7904.410065237651
+  },
+  {
+    "case": "uniform correctness exception to unstable upstream",
+    "bits": 16,
+    "stage": "RetinexEdgeMask",
+    "max_abs": 16573.0,
+    "mean_abs": 1105.498602050326
+  }
+]

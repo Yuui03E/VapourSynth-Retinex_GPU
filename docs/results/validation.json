@@ -1,0 +1,388 @@
+{
+  "python": "3.14.10",
+  "vapoursynth": "R81",
+  "width": 320,
+  "height": 180,
+  "results": [
+    {
+      "stage": "MSRCP",
+      "bits": 8,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "MSRCP",
+      "bits": 10,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "MSRCP",
+      "bits": 12,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "MSRCP",
+      "bits": 16,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "MSRCP",
+      "bits": 32,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2e-05,
+      "passed": true,
+      "reference": "float extension"
+    },
+    {
+      "stage": "Kirsch",
+      "bits": 8,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "Kirsch",
+      "bits": 10,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "Kirsch",
+      "bits": 12,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "Kirsch",
+      "bits": 16,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "Kirsch",
+      "bits": 32,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.9073486328125e-06,
+      "mean_abs": 4.572680188209267e-08,
+      "tolerance": 2e-05,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "TCanny",
+      "bits": 8,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 2.8935185185185186e-05,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "TCanny",
+      "bits": 10,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 1.4467592592592591e-05,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "TCanny",
+      "bits": 12,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 4.9189814814814815e-05,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "TCanny",
+      "bits": 16,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 0.000847800925925926,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "TCanny",
+      "bits": 32,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 4.0046870708465576e-07,
+      "mean_abs": 1.7518296848930655e-08,
+      "tolerance": 2e-05,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "RetinexEdgeMask",
+      "bits": 8,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 5.787037037037037e-06,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "RetinexEdgeMask",
+      "bits": 10,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 5.787037037037037e-06,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "RetinexEdgeMask",
+      "bits": 12,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 0.0005815972222222223,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "RetinexEdgeMask",
+      "bits": 16,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.0,
+      "mean_abs": 0.0021932870370370374,
+      "tolerance": 2,
+      "passed": true,
+      "reference": "upstream"
+    },
+    {
+      "stage": "RetinexEdgeMask",
+      "bits": 32,
+      "frames": 6,
+      "frame_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "excluded_uniform_pattern": 1,
+      "max_abs": 1.9222497940063477e-06,
+      "mean_abs": 5.97243716890311e-08,
+      "tolerance": 2e-05,
+      "passed": true,
+      "reference": "float extension"
+    }
+  ]
+}

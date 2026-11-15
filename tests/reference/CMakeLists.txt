@@ -1,0 +1,21 @@
+# Downloaded references stay unmodified and are never installed with the GPU DLL.
+set(REFS "${PROJECT_SOURCE_DIR}/refs")
+foreach(name Gaussian MSR)
+  file(READ "${REFS}/retinex/source/${name}.cpp" body)
+  string(REGEX REPLACE "#include \"[^\"]+\"" "" body "${body}")
+  file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/${name}.inc" "${body}")
+endforeach()
+add_library(retinex_reference SHARED cpu.cpp)
+target_include_directories(retinex_reference PRIVATE "${VAPOURSYNTH_INCLUDE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}")
+add_library(tcanny_reference SHARED "${REFS}/tcanny/TCanny/TCanny.cpp")
+target_include_directories(tcanny_reference PRIVATE "${VAPOURSYNTH_INCLUDE_DIR}")
+if(MSVC)
+  target_sources(tcanny_reference PRIVATE "${REFS}/tcanny/TCanny/TCanny_SSE2.cpp"
+    "${REFS}/tcanny/TCanny/TCanny_AVX2.cpp" "${REFS}/tcanny/TCanny/TCanny_AVX512.cpp"
+    "${REFS}/tcanny/TCanny/VCL2/instrset_detect.cpp")
+  target_compile_definitions(tcanny_reference PRIVATE TCANNY_X86)
+  set_source_files_properties("${REFS}/tcanny/TCanny/TCanny_AVX2.cpp" PROPERTIES COMPILE_OPTIONS /arch:AVX2)
+  set_source_files_properties("${REFS}/tcanny/TCanny/TCanny_AVX512.cpp" PROPERTIES COMPILE_OPTIONS /arch:AVX512)
+  target_compile_options(retinex_reference PRIVATE /fp:precise)
+  target_compile_options(tcanny_reference PRIVATE /fp:precise)
+endif()

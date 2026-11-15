@@ -1,0 +1,3063 @@
+{
+  "passed": true,
+  "vsjet_version": "3.0.0",
+  "source_frames": [
+    1440
+  ],
+  "project_binary_sha256": "3e2ce8b0c95fc8c048756d36fa7f5b5ae9586b783677056b1f8b90676078c89a",
+  "python_sources": {
+    "retinex": {
+      "file": "vsmasktools/spat_funcs.py",
+      "sha256": "543452a367dcf96b6558b42a48fdfe197a202b73a3b2a2d60cf19cf7c77bb4dd",
+      "line": 104,
+      "matches_pinned_upstream": true
+    },
+    "gauss_blur": {
+      "file": "vsrgtools/blur.py",
+      "sha256": "4525a3cfd3694d64de34cf0569c75446c0fb9627c62f70b3d42b6eeb28c0492c",
+      "line": 251,
+      "matches_pinned_upstream": true
+    },
+    "dre": {
+      "file": "vsmasktools/edge_funcs.py",
+      "sha256": "fb86459979cb71e32cf8ac8160df89f1b6b9ad1808d914ea62ffb055c1aaa314",
+      "line": 139,
+      "matches_pinned_upstream": true
+    }
+  },
+  "upstream_revisions": {
+    "vsjet": "de0ba4a1ab2c1aa1bdf8024e62d551402e2a2cf6",
+    "vszip": "f6a4c86ee086ad51897796da6e92e6c154e0539c",
+    "vszipcu": "ca15eff265b81b8f851ca74fed09f1ef22ce7990",
+    "vszipcl": "6c64f91055eb1925cfe203de7286b69c04cea75f",
+    "retinex": "6bfbdd429159c85075dc4b08e0ac4e706470916b",
+    "tcanny": "14ac2ceeb59afc7089974d0ae233fe8d0ea183c8"
+  },
+  "official_binary_checks": {
+    "vszip": {
+      "package": "vapoursynth-vszip",
+      "version": "24.0.0",
+      "wheel": "vapoursynth_vszip-24.0.0-py3-none-win_amd64.whl",
+      "wheel_sha256": "95c635d0f1fdd870dd0f08583fa2d9842a7d9bbee36a70158527f9935f0b0761",
+      "dll": "vszip.zn4.dll",
+      "dll_sha256": "62aee65fc8836b61478b5eebca9bfdb3a6222806a3f0f0959bce4c4e1d5cd38e",
+      "matches_official_wheel": true
+    },
+    "vszipcu": {
+      "package": "vapoursynth-vszipcu",
+      "version": "1.2.0",
+      "wheel": "vapoursynth_vszipcu-1.2.0-py3-none-win_amd64.whl",
+      "wheel_sha256": "7c71247a8caf82883187b2560c690807cf2ea4a2db465f935cbd923ef21251fd",
+      "dll": "vszipcu.dll",
+      "dll_sha256": "40b95b888978e5b38b96f528e24ad6f5d8da8a8e05a15ee2e960b92ff3688c89",
+      "matches_official_wheel": true
+    },
+    "vszipcl": {
+      "package": "vapoursynth-vszipcl",
+      "version": "1.2.0",
+      "wheel": "vapoursynth_vszipcl-1.2.0-py3-none-win_amd64.whl",
+      "wheel_sha256": "087b291b831536b6babec07033d744a0dc1b7a80094ef43539efc691a02f7366",
+      "dll": "vszipcl.dll",
+      "dll_sha256": "b89d60d3b280182a8220349bce2a360a7cd2a304cbc43a6fb38948fa04633bd4",
+      "matches_official_wheel": true
+    }
+  },
+  "executions": [
+    {
+      "candidate": "our_fastest",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "fallback": 0,
+            "mode": "fastest",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_fastest_cpu",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "fallback": 0,
+            "mode": "fastest",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "our_exact",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "fallback": 0,
+            "mode": "exact",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ],
+            "workers": 2
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_fast8",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "downscale": 8,
+            "fallback": 0,
+            "mode": "fast",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_exact_cpu",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "mode": "exact",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "our_fast_cpu",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "mode": "fast",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "atom_normal",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "atom_draft",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cpu_fast",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Bilinear",
+          "width": 38,
+          "height": 22,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Bilinear",
+          "width": 10,
+          "height": 4,
+          "format": "GrayS",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cpu_full",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cuda_fast",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cuda_full",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_opencl_fast",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_opencl_full",
+      "stage": "retinex",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "our_fastest",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "fallback": 0,
+            "mode": "fastest",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_fastest_cpu",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "fallback": 0,
+            "mode": "fastest",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "our_exact",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "fallback": 0,
+            "mode": "exact",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ],
+            "workers": 2
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_fast8",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "gpu",
+            "downscale": 8,
+            "fallback": 0,
+            "mode": "fast",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "gpu"
+    },
+    {
+      "candidate": "our_exact_cpu",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "mode": "exact",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "our_fast_cpu",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "retinex_gpu",
+          "function": "RetinexEdgeMask",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "backend": "cpu",
+            "mode": "fast",
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": "cpu"
+    },
+    {
+      "candidate": "atom_normal",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "fmtc",
+          "function": "bitdepth",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "tcanny",
+          "function": "TCanny",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "mode": 1,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "retinex",
+          "function": "MSRCP",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "sigma": [
+              50.0,
+              200.0,
+              350.0
+            ]
+          }
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "atom_draft",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "fmtc",
+          "function": "bitdepth",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Convolution",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "tcanny",
+          "function": "TCanny",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "mode": 1,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "std",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cpu_fast",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Bilinear",
+          "width": 38,
+          "height": 22,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Bilinear",
+          "width": 10,
+          "height": 4,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cpu_full",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize2",
+          "function": "Custom",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cuda_fast",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_cuda_full",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcu",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_opencl_fast",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    },
+    {
+      "candidate": "vsjet_opencl_full",
+      "stage": "mask",
+      "frame": 1440,
+      "executed": true,
+      "native_gpu_filters": [
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        }
+      ],
+      "graph": [
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "Minimum",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Prewitt",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 1.0
+          }
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "PlaneMinMax",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "akarin",
+          "function": "Expr",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "PlaneStats",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszip",
+          "function": "Dither",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {}
+        },
+        {
+          "namespace": "resize",
+          "function": "Point",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        },
+        {
+          "namespace": "std",
+          "function": "ShufflePlanes",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray10",
+          "parameters": {}
+        },
+        {
+          "namespace": "bs",
+          "function": "VideoSource",
+          "width": 1920,
+          "height": 1080,
+          "format": "YUV420P10",
+          "parameters": {}
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 50.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 200.0
+          }
+        },
+        {
+          "namespace": "vszipcl",
+          "function": "GaussBlur",
+          "width": 1920,
+          "height": 1080,
+          "format": "GrayS",
+          "parameters": {
+            "num_streams": 4,
+            "sigma": 350.0
+          }
+        },
+        {
+          "namespace": "edgemasks",
+          "function": "Kirsch",
+          "width": 1920,
+          "height": 1080,
+          "format": "Gray16",
+          "parameters": {}
+        }
+      ],
+      "reported_backend": null
+    }
+  ],
+  "conclusions": {
+    "gpu_retinex": "Hybrid pipeline: native CUDA/OpenCL Gaussian filters plus CPU expression/statistics stages.",
+    "fast_cpu": "Largest sigma replaced by frame mean; remaining blurs downsample for CPU fast mode.",
+    "fast_gpu": "Largest sigma replaced by frame mean; remaining Gaussian blurs retain full resolution.",
+    "native_code": "vszipcu/vszipcl GaussBlur uses separable finite Gaussian taps; project exact uses double recursive Gaussian."
+  }
+}

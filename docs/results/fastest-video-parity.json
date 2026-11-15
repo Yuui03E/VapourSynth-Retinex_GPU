@@ -1,0 +1,1378 @@
+{
+  "source": "[Beatrice-Raws] Date A Live (Director's Cut Edition) 08 [BDRip 1920x1080 x264 FLAC].mkv",
+  "candidate_sha256": "3e2ce8b0c95fc8c048756d36fa7f5b5ae9586b783677056b1f8b90676078c89a",
+  "anchor_sha256": "3e2ce8b0c95fc8c048756d36fa7f5b5ae9586b783677056b1f8b90676078c89a",
+  "trials": [],
+  "timing": [],
+  "quality": [
+    {
+      "stage": "retinex",
+      "frame": 128,
+      "mae": 0.01835920289158821,
+      "rmse": 0.026208773255348206,
+      "p99": 0.09990370273590088,
+      "maximum": 0.23250213265419006,
+      "fraction_over_1pct": 0.6329509066358024,
+      "regions": {
+        "dark": {
+          "pixels": 119250,
+          "mae": 0.027605507522821426
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 1440,
+      "mae": 0.016800468787550926,
+      "rmse": 0.0223089512437582,
+      "p99": 0.05565065145492554,
+      "maximum": 0.057594895362854004,
+      "fraction_over_1pct": 0.543575424382716,
+      "regions": {
+        "dark": {
+          "pixels": 172821,
+          "mae": 0.007707235403358936
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 1621,
+      "mae": 0.029885385185480118,
+      "rmse": 0.043860841542482376,
+      "p99": 0.1485445201396942,
+      "maximum": 0.20105594396591187,
+      "fraction_over_1pct": 0.7700612461419754,
+      "regions": {
+        "dark": {
+          "pixels": 528387,
+          "mae": 0.06723015010356903
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 3115,
+      "mae": 0.01058613508939743,
+      "rmse": 0.01394821610301733,
+      "p99": 0.0357627272605896,
+      "maximum": 0.04873001575469971,
+      "fraction_over_1pct": 0.4124194637345679,
+      "regions": {
+        "dark": {
+          "pixels": 74850,
+          "mae": 0.00819894578307867
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 4608,
+      "mae": 0.011345237493515015,
+      "rmse": 0.018926572054624557,
+      "p99": 0.07000923156738281,
+      "maximum": 0.07266700267791748,
+      "fraction_over_1pct": 0.3361680169753086,
+      "regions": {
+        "dark": {
+          "pixels": 36493,
+          "mae": 0.013470002450048923
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 6102,
+      "mae": 0.03796898201107979,
+      "rmse": 0.049044858664274216,
+      "p99": 0.10398828983306885,
+      "maximum": 0.10821563005447388,
+      "fraction_over_1pct": 0.7706544174382716,
+      "regions": {
+        "dark": {
+          "pixels": 55513,
+          "mae": 0.004205769393593073
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 7200,
+      "mae": 0.023951413109898567,
+      "rmse": 0.029257239773869514,
+      "p99": 0.05509769916534424,
+      "maximum": 0.055989623069763184,
+      "fraction_over_1pct": 0.7298085455246913,
+      "regions": {
+        "dark": {
+          "pixels": 2440,
+          "mae": 0.00020820759527850896
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 7595,
+      "mae": 0.03202872723340988,
+      "rmse": 0.04187944158911705,
+      "p99": 0.10653895139694214,
+      "maximum": 0.123501718044281,
+      "fraction_over_1pct": 0.7274975887345679,
+      "regions": {
+        "dark": {
+          "pixels": 1285986,
+          "mae": 0.0377267561852932
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 9089,
+      "mae": 0.02185485139489174,
+      "rmse": 0.03335872292518616,
+      "p99": 0.11124783754348755,
+      "maximum": 0.11850744485855103,
+      "fraction_over_1pct": 0.5586853780864197,
+      "regions": {
+        "dark": {
+          "pixels": 1449123,
+          "mae": 0.013192160986363888
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 10080,
+      "mae": 0.011050524190068245,
+      "rmse": 0.014865513890981674,
+      "p99": 0.040667831897735596,
+      "maximum": 0.09626495838165283,
+      "fraction_over_1pct": 0.431304012345679,
+      "regions": {
+        "dark": {
+          "pixels": 72999,
+          "mae": 0.007800239138305187
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 10582,
+      "mae": 0.01986316405236721,
+      "rmse": 0.02453666366636753,
+      "p99": 0.05725598335266113,
+      "maximum": 0.11272832751274109,
+      "fraction_over_1pct": 0.7017674575617284,
+      "regions": {
+        "dark": {
+          "pixels": 21300,
+          "mae": 0.012861676514148712
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 12076,
+      "mae": 0.022872552275657654,
+      "rmse": 0.02675975300371647,
+      "p99": 0.06845748424530029,
+      "maximum": 0.07559216022491455,
+      "fraction_over_1pct": 0.8066927083333333,
+      "regions": {
+        "dark": {
+          "pixels": 31201,
+          "mae": 0.004026657436043024
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 13570,
+      "mae": 0.0236612930893898,
+      "rmse": 0.027981463819742203,
+      "p99": 0.0653003454208374,
+      "maximum": 0.07748287916183472,
+      "fraction_over_1pct": 0.8047820216049383,
+      "regions": {
+        "dark": {
+          "pixels": 67899,
+          "mae": 0.008378429338335991
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 15063,
+      "mae": 0.017652219161391258,
+      "rmse": 0.02182217873632908,
+      "p99": 0.057933807373046875,
+      "maximum": 0.06647759675979614,
+      "fraction_over_1pct": 0.6722410300925926,
+      "regions": {
+        "dark": {
+          "pixels": 144593,
+          "mae": 0.003463104832917452
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 16557,
+      "mae": 0.031192965805530548,
+      "rmse": 0.03754490241408348,
+      "p99": 0.0769120454788208,
+      "maximum": 0.08171021938323975,
+      "fraction_over_1pct": 0.777022087191358,
+      "regions": {
+        "dark": {
+          "pixels": 31166,
+          "mae": 0.0025919785257428885
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 18050,
+      "mae": 0.025629062205553055,
+      "rmse": 0.03436857461929321,
+      "p99": 0.09223389625549316,
+      "maximum": 0.13992935419082642,
+      "fraction_over_1pct": 0.7388474151234568,
+      "regions": {
+        "dark": {
+          "pixels": 89535,
+          "mae": 0.005966560449451208
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 18720,
+      "mae": 0.012746339663863182,
+      "rmse": 0.01624452881515026,
+      "p99": 0.03815281391143799,
+      "maximum": 0.0853310227394104,
+      "fraction_over_1pct": 0.5329547646604939,
+      "regions": {
+        "dark": {
+          "pixels": 4969,
+          "mae": 0.0011300980113446712
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 19544,
+      "mae": 0.019595269113779068,
+      "rmse": 0.024508053436875343,
+      "p99": 0.05384916067123413,
+      "maximum": 0.05636417865753174,
+      "fraction_over_1pct": 0.6479933449074075,
+      "regions": {
+        "dark": {
+          "pixels": 297,
+          "mae": 0.0
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 21037,
+      "mae": 0.018394583836197853,
+      "rmse": 0.022999338805675507,
+      "p99": 0.06412315368652344,
+      "maximum": 0.07207834720611572,
+      "fraction_over_1pct": 0.7281616512345679,
+      "regions": {
+        "dark": {
+          "pixels": 163667,
+          "mae": 0.013655509799718857
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 22531,
+      "mae": 0.03504014015197754,
+      "rmse": 0.04430907964706421,
+      "p99": 0.08591967821121216,
+      "maximum": 0.09494507312774658,
+      "fraction_over_1pct": 0.7361091820987654,
+      "regions": {
+        "dark": {
+          "pixels": 31350,
+          "mae": 0.007946192286908627
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 24025,
+      "mae": 0.017436880618333817,
+      "rmse": 0.022409768775105476,
+      "p99": 0.056524693965911865,
+      "maximum": 0.06464040279388428,
+      "fraction_over_1pct": 0.6154060570987654,
+      "regions": {
+        "dark": {
+          "pixels": 24774,
+          "mae": 0.005390853621065617
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 25518,
+      "mae": 0.01541915349662304,
+      "rmse": 0.019572293385863304,
+      "p99": 0.0557398796081543,
+      "maximum": 0.118685781955719,
+      "fraction_over_1pct": 0.6054769483024691,
+      "regions": {
+        "dark": {
+          "pixels": 1215208,
+          "mae": 0.015992796048521996
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 27012,
+      "mae": 0.028814423829317093,
+      "rmse": 0.034244757145643234,
+      "p99": 0.07630568742752075,
+      "maximum": 0.13352596759796143,
+      "fraction_over_1pct": 0.799747299382716,
+      "regions": {
+        "dark": {
+          "pixels": 48705,
+          "mae": 0.00492158904671669
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 28505,
+      "mae": 0.03745346888899803,
+      "rmse": 0.053357187658548355,
+      "p99": 0.1826484203338623,
+      "maximum": 0.20528322458267212,
+      "fraction_over_1pct": 0.8167891589506173,
+      "regions": {
+        "dark": {
+          "pixels": 1558805,
+          "mae": 0.028154123574495316
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 29999,
+      "mae": 0.02766464091837406,
+      "rmse": 0.035984188318252563,
+      "p99": 0.11023116111755371,
+      "maximum": 0.24225884675979614,
+      "fraction_over_1pct": 0.7666517168209876,
+      "regions": {
+        "dark": {
+          "pixels": 547000,
+          "mae": 0.030854379758238792
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 30240,
+      "mae": 0.03845422714948654,
+      "rmse": 0.047284603118896484,
+      "p99": 0.11395907402038574,
+      "maximum": 0.1620469093322754,
+      "fraction_over_1pct": 0.8762707368827161,
+      "regions": {
+        "dark": {
+          "pixels": 1362874,
+          "mae": 0.03788985311985016
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 31492,
+      "mae": 0.030544782057404518,
+      "rmse": 0.041858356446027756,
+      "p99": 0.15072059631347656,
+      "maximum": 0.4214112162590027,
+      "fraction_over_1pct": 0.808344425154321,
+      "regions": {
+        "dark": {
+          "pixels": 744831,
+          "mae": 0.03694220632314682
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 32986,
+      "mae": 0.04320851340889931,
+      "rmse": 0.05550919473171234,
+      "p99": 0.14089253544807434,
+      "maximum": 0.1434789001941681,
+      "fraction_over_1pct": 0.8260908564814815,
+      "regions": {
+        "dark": {
+          "pixels": 924974,
+          "mae": 0.015919648110866547
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "retinex",
+      "frame": 34480,
+      "mae": 0.023896021768450737,
+      "rmse": 0.03274313732981682,
+      "p99": 0.08397549390792847,
+      "maximum": 0.10304296016693115,
+      "fraction_over_1pct": 0.649963348765432,
+      "regions": {
+        "dark": {
+          "pixels": 274193,
+          "mae": 0.010565380565822124
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 128,
+      "mae": 0.00035042493254877627,
+      "rmse": 0.0008832681342028081,
+      "p99": 0.0032806396484375,
+      "maximum": 0.054230570793151855,
+      "fraction_over_1pct": 0.0007079475308641975,
+      "regions": {
+        "dark": {
+          "pixels": 119250,
+          "mae": 0.0010186159051954746
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 1440,
+      "mae": 0.0003667689743451774,
+      "rmse": 0.0006326712900772691,
+      "p99": 0.0025177597999572754,
+      "maximum": 0.012237787246704102,
+      "fraction_over_1pct": 4.822530864197531e-07,
+      "regions": {
+        "dark": {
+          "pixels": 172821,
+          "mae": 0.000320595019729808
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 1621,
+      "mae": 0.0007146077114157379,
+      "rmse": 0.001729214796796441,
+      "p99": 0.00798046588897705,
+      "maximum": 0.05049210786819458,
+      "fraction_over_1pct": 0.006471354166666667,
+      "regions": {
+        "dark": {
+          "pixels": 528387,
+          "mae": 0.0017147150356322527
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 3115,
+      "mae": 0.00021702209778595716,
+      "rmse": 0.0003654517640825361,
+      "p99": 0.001373291015625,
+      "maximum": 0.013717830181121826,
+      "fraction_over_1pct": 7.71604938271605e-06,
+      "regions": {
+        "dark": {
+          "pixels": 74850,
+          "mae": 0.00022016088769305497
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 4608,
+      "mae": 0.0002603134198579937,
+      "rmse": 0.0005835097981616855,
+      "p99": 0.0027466416358947754,
+      "maximum": 0.014572381973266602,
+      "fraction_over_1pct": 4.1956018518518515e-05,
+      "regions": {
+        "dark": {
+          "pixels": 36493,
+          "mae": 0.0007276542601175606
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 6102,
+      "mae": 0.0006244369433261454,
+      "rmse": 0.0011341641657054424,
+      "p99": 0.004348814487457275,
+      "maximum": 0.046707868576049805,
+      "fraction_over_1pct": 0.0006486304012345679,
+      "regions": {
+        "dark": {
+          "pixels": 55513,
+          "mae": 0.000394860515370965
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 7200,
+      "mae": 0.00017901851970236748,
+      "rmse": 0.0002868486917577684,
+      "p99": 0.0009765625,
+      "maximum": 0.010879695415496826,
+      "fraction_over_1pct": 9.645061728395062e-07,
+      "regions": {
+        "dark": {
+          "pixels": 2440,
+          "mae": 0.0002315493911737576
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 7595,
+      "mae": 0.0005433192127384245,
+      "rmse": 0.0010173723567277193,
+      "p99": 0.0034027546644210815,
+      "maximum": 0.056809306144714355,
+      "fraction_over_1pct": 0.000675636574074074,
+      "regions": {
+        "dark": {
+          "pixels": 1285986,
+          "mae": 0.0005976749816909432
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 9089,
+      "mae": 0.0005827488494105637,
+      "rmse": 0.0013792820973321795,
+      "p99": 0.006424039602279663,
+      "maximum": 0.038300156593322754,
+      "fraction_over_1pct": 0.003160686728395062,
+      "regions": {
+        "dark": {
+          "pixels": 1449123,
+          "mae": 0.0006010040524415672
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 10080,
+      "mae": 0.00028909838874824345,
+      "rmse": 0.0006520521710626781,
+      "p99": 0.0022735893726348877,
+      "maximum": 0.054505228996276855,
+      "fraction_over_1pct": 0.00031684027777777776,
+      "regions": {
+        "dark": {
+          "pixels": 72999,
+          "mae": 0.00036748204729519784
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 10582,
+      "mae": 0.0004045772657264024,
+      "rmse": 0.00072325742803514,
+      "p99": 0.0025635361671447754,
+      "maximum": 0.032410167157649994,
+      "fraction_over_1pct": 0.00028018904320987656,
+      "regions": {
+        "dark": {
+          "pixels": 21300,
+          "mae": 0.000779085501562804
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 12076,
+      "mae": 0.00046807786566205323,
+      "rmse": 0.0007957989582791924,
+      "p99": 0.0029907822608947754,
+      "maximum": 0.023056387901306152,
+      "fraction_over_1pct": 6.99266975308642e-05,
+      "regions": {
+        "dark": {
+          "pixels": 31201,
+          "mae": 0.00040681162499822676
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 13570,
+      "mae": 0.0004440916236490011,
+      "rmse": 0.0010005342774093151,
+      "p99": 0.0036468508187681437,
+      "maximum": 0.04905775189399719,
+      "fraction_over_1pct": 0.0011549961419753086,
+      "regions": {
+        "dark": {
+          "pixels": 67899,
+          "mae": 0.0005869854940101504
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 15063,
+      "mae": 0.0002374412870267406,
+      "rmse": 0.0004435921728145331,
+      "p99": 0.001678466796875,
+      "maximum": 0.018265068531036377,
+      "fraction_over_1pct": 7.474922839506173e-05,
+      "regions": {
+        "dark": {
+          "pixels": 144593,
+          "mae": 0.0003069784725084901
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 16557,
+      "mae": 0.0004610613395925611,
+      "rmse": 0.0007126843556761742,
+      "p99": 0.0024567246437072754,
+      "maximum": 0.020187675952911377,
+      "fraction_over_1pct": 6.36574074074074e-05,
+      "regions": {
+        "dark": {
+          "pixels": 31166,
+          "mae": 0.0005332074942998588
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 18050,
+      "mae": 0.0003479775332380086,
+      "rmse": 0.000633748306427151,
+      "p99": 0.0024109482765197754,
+      "maximum": 0.04997330904006958,
+      "fraction_over_1pct": 0.0001282793209876543,
+      "regions": {
+        "dark": {
+          "pixels": 89535,
+          "mae": 0.00039106025360524654
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 18720,
+      "mae": 0.00027284680982120335,
+      "rmse": 0.0006303373374976218,
+      "p99": 0.0018921494483947754,
+      "maximum": 0.04402226209640503,
+      "fraction_over_1pct": 0.0004147376543209877,
+      "regions": {
+        "dark": {
+          "pixels": 4969,
+          "mae": 0.00027435526135377586
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 19544,
+      "mae": 0.0002859714441001415,
+      "rmse": 0.0005410048761405051,
+      "p99": 0.0021210312843322754,
+      "maximum": 0.013855159282684326,
+      "fraction_over_1pct": 5.4494598765432097e-05,
+      "regions": {
+        "dark": {
+          "pixels": 297,
+          "mae": 0.0004239646368660033
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 21037,
+      "mae": 0.0003903216274920851,
+      "rmse": 0.0007372160907834768,
+      "p99": 0.0031738877296447754,
+      "maximum": 0.014389276504516602,
+      "fraction_over_1pct": 4.822530864197531e-06,
+      "regions": {
+        "dark": {
+          "pixels": 163667,
+          "mae": 0.00024411443155258894
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 22531,
+      "mae": 0.0003398518019821495,
+      "rmse": 0.0006944906781427562,
+      "p99": 0.0029297471046447754,
+      "maximum": 0.026153922080993652,
+      "fraction_over_1pct": 0.00023485725308641976,
+      "regions": {
+        "dark": {
+          "pixels": 31350,
+          "mae": 0.0005673781270161271
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 24025,
+      "mae": 0.00035925203701481223,
+      "rmse": 0.0006427316111512482,
+      "p99": 0.002532958984375,
+      "maximum": 0.021774649620056152,
+      "fraction_over_1pct": 0.00013406635802469137,
+      "regions": {
+        "dark": {
+          "pixels": 24774,
+          "mae": 0.00045701366616412997
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 25518,
+      "mae": 0.0006397331599146128,
+      "rmse": 0.0012457016855478287,
+      "p99": 0.0037232041358947754,
+      "maximum": 0.06721600890159607,
+      "fraction_over_1pct": 0.001180073302469136,
+      "regions": {
+        "dark": {
+          "pixels": 1215208,
+          "mae": 0.0005831343005411327
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 27012,
+      "mae": 0.0005082257557660341,
+      "rmse": 0.0010952266165986657,
+      "p99": 0.0035095810890197754,
+      "maximum": 0.03520256280899048,
+      "fraction_over_1pct": 0.001693672839506173,
+      "regions": {
+        "dark": {
+          "pixels": 48705,
+          "mae": 0.0005746258539147675
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 28505,
+      "mae": 0.0015682714292779565,
+      "rmse": 0.003313278779387474,
+      "p99": 0.014312952756881714,
+      "maximum": 0.07902652025222778,
+      "fraction_over_1pct": 0.021454957561728397,
+      "regions": {
+        "dark": {
+          "pixels": 1558805,
+          "mae": 0.0016220374964177608
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 29999,
+      "mae": 0.0008832311723381281,
+      "rmse": 0.0017363467486575246,
+      "p99": 0.006073087453842163,
+      "maximum": 0.061570167541503906,
+      "fraction_over_1pct": 0.002827932098765432,
+      "regions": {
+        "dark": {
+          "pixels": 547000,
+          "mae": 0.0012143236817792058
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 30240,
+      "mae": 0.0018693894380703568,
+      "rmse": 0.003047261154279113,
+      "p99": 0.011566340923309326,
+      "maximum": 0.07730221748352051,
+      "fraction_over_1pct": 0.01574170524691358,
+      "regions": {
+        "dark": {
+          "pixels": 1362874,
+          "mae": 0.0020664436742663383
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 31492,
+      "mae": 0.00041331996908411384,
+      "rmse": 0.0009189957636408508,
+      "p99": 0.003921568393707275,
+      "maximum": 0.037796616554260254,
+      "fraction_over_1pct": 0.0008082561728395062,
+      "regions": {
+        "dark": {
+          "pixels": 744831,
+          "mae": 0.000498105539008975
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 32986,
+      "mae": 0.0005882015684619546,
+      "rmse": 0.0012798766838386655,
+      "p99": 0.006149411201477051,
+      "maximum": 0.02523842453956604,
+      "fraction_over_1pct": 0.001812307098765432,
+      "regions": {
+        "dark": {
+          "pixels": 924974,
+          "mae": 0.0005898603121750057
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    {
+      "stage": "mask",
+      "frame": 34480,
+      "mae": 0.00042365543777123094,
+      "rmse": 0.000855661288369447,
+      "p99": 0.003906309604644775,
+      "maximum": 0.014648675918579102,
+      "fraction_over_1pct": 0.0002488425925925926,
+      "regions": {
+        "dark": {
+          "pixels": 274193,
+          "mae": 0.000537628831807524
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    }
+  ],
+  "dark": [
+    {
+      "frame": 128,
+      "threshold": 0.03,
+      "reference_pixels": 100795,
+      "missed": 1077,
+      "extra": 120
+    },
+    {
+      "frame": 128,
+      "threshold": 0.122,
+      "reference_pixels": 19154,
+      "missed": 192,
+      "extra": 5
+    },
+    {
+      "frame": 1440,
+      "threshold": 0.03,
+      "reference_pixels": 151418,
+      "missed": 124,
+      "extra": 263
+    },
+    {
+      "frame": 1440,
+      "threshold": 0.122,
+      "reference_pixels": 24106,
+      "missed": 59,
+      "extra": 96
+    },
+    {
+      "frame": 1621,
+      "threshold": 0.03,
+      "reference_pixels": 484380,
+      "missed": 3319,
+      "extra": 78
+    },
+    {
+      "frame": 1621,
+      "threshold": 0.122,
+      "reference_pixels": 92629,
+      "missed": 2579,
+      "extra": 8
+    },
+    {
+      "frame": 3115,
+      "threshold": 0.03,
+      "reference_pixels": 69861,
+      "missed": 29,
+      "extra": 13
+    },
+    {
+      "frame": 3115,
+      "threshold": 0.122,
+      "reference_pixels": 47179,
+      "missed": 30,
+      "extra": 1
+    },
+    {
+      "frame": 4608,
+      "threshold": 0.03,
+      "reference_pixels": 33118,
+      "missed": 32,
+      "extra": 3
+    },
+    {
+      "frame": 4608,
+      "threshold": 0.122,
+      "reference_pixels": 19717,
+      "missed": 23,
+      "extra": 2
+    },
+    {
+      "frame": 6102,
+      "threshold": 0.03,
+      "reference_pixels": 41837,
+      "missed": 35,
+      "extra": 211
+    },
+    {
+      "frame": 6102,
+      "threshold": 0.122,
+      "reference_pixels": 3450,
+      "missed": 29,
+      "extra": 47
+    },
+    {
+      "frame": 7200,
+      "threshold": 0.03,
+      "reference_pixels": 2049,
+      "missed": 0,
+      "extra": 2
+    },
+    {
+      "frame": 7200,
+      "threshold": 0.122,
+      "reference_pixels": 160,
+      "missed": 0,
+      "extra": 0
+    },
+    {
+      "frame": 7595,
+      "threshold": 0.03,
+      "reference_pixels": 1128357,
+      "missed": 5317,
+      "extra": 943
+    },
+    {
+      "frame": 7595,
+      "threshold": 0.122,
+      "reference_pixels": 131146,
+      "missed": 1869,
+      "extra": 208
+    },
+    {
+      "frame": 9089,
+      "threshold": 0.03,
+      "reference_pixels": 1191657,
+      "missed": 1397,
+      "extra": 3682
+    },
+    {
+      "frame": 9089,
+      "threshold": 0.122,
+      "reference_pixels": 229169,
+      "missed": 164,
+      "extra": 1265
+    },
+    {
+      "frame": 10080,
+      "threshold": 0.03,
+      "reference_pixels": 59089,
+      "missed": 62,
+      "extra": 37
+    },
+    {
+      "frame": 10080,
+      "threshold": 0.122,
+      "reference_pixels": 18888,
+      "missed": 37,
+      "extra": 29
+    },
+    {
+      "frame": 10582,
+      "threshold": 0.03,
+      "reference_pixels": 19379,
+      "missed": 28,
+      "extra": 4
+    },
+    {
+      "frame": 10582,
+      "threshold": 0.122,
+      "reference_pixels": 8800,
+      "missed": 29,
+      "extra": 1
+    },
+    {
+      "frame": 12076,
+      "threshold": 0.03,
+      "reference_pixels": 28325,
+      "missed": 41,
+      "extra": 14
+    },
+    {
+      "frame": 12076,
+      "threshold": 0.122,
+      "reference_pixels": 11524,
+      "missed": 15,
+      "extra": 11
+    },
+    {
+      "frame": 13570,
+      "threshold": 0.03,
+      "reference_pixels": 61834,
+      "missed": 55,
+      "extra": 11
+    },
+    {
+      "frame": 13570,
+      "threshold": 0.122,
+      "reference_pixels": 25778,
+      "missed": 86,
+      "extra": 3
+    },
+    {
+      "frame": 15063,
+      "threshold": 0.03,
+      "reference_pixels": 120362,
+      "missed": 154,
+      "extra": 139
+    },
+    {
+      "frame": 15063,
+      "threshold": 0.122,
+      "reference_pixels": 34520,
+      "missed": 31,
+      "extra": 41
+    },
+    {
+      "frame": 16557,
+      "threshold": 0.03,
+      "reference_pixels": 31009,
+      "missed": 0,
+      "extra": 0
+    },
+    {
+      "frame": 16557,
+      "threshold": 0.122,
+      "reference_pixels": 26506,
+      "missed": 18,
+      "extra": 15
+    },
+    {
+      "frame": 18050,
+      "threshold": 0.03,
+      "reference_pixels": 70343,
+      "missed": 50,
+      "extra": 365
+    },
+    {
+      "frame": 18050,
+      "threshold": 0.122,
+      "reference_pixels": 5523,
+      "missed": 7,
+      "extra": 25
+    },
+    {
+      "frame": 18720,
+      "threshold": 0.03,
+      "reference_pixels": 4388,
+      "missed": 4,
+      "extra": 3
+    },
+    {
+      "frame": 18720,
+      "threshold": 0.122,
+      "reference_pixels": 1969,
+      "missed": 4,
+      "extra": 0
+    },
+    {
+      "frame": 19544,
+      "threshold": 0.03,
+      "reference_pixels": 293,
+      "missed": 0,
+      "extra": 0
+    },
+    {
+      "frame": 19544,
+      "threshold": 0.122,
+      "reference_pixels": 163,
+      "missed": 0,
+      "extra": 0
+    },
+    {
+      "frame": 21037,
+      "threshold": 0.03,
+      "reference_pixels": 118975,
+      "missed": 119,
+      "extra": 116
+    },
+    {
+      "frame": 21037,
+      "threshold": 0.122,
+      "reference_pixels": 37878,
+      "missed": 39,
+      "extra": 31
+    },
+    {
+      "frame": 22531,
+      "threshold": 0.03,
+      "reference_pixels": 29675,
+      "missed": 8,
+      "extra": 19
+    },
+    {
+      "frame": 22531,
+      "threshold": 0.122,
+      "reference_pixels": 16660,
+      "missed": 17,
+      "extra": 27
+    },
+    {
+      "frame": 24025,
+      "threshold": 0.03,
+      "reference_pixels": 22131,
+      "missed": 18,
+      "extra": 2
+    },
+    {
+      "frame": 24025,
+      "threshold": 0.122,
+      "reference_pixels": 8270,
+      "missed": 12,
+      "extra": 4
+    },
+    {
+      "frame": 25518,
+      "threshold": 0.03,
+      "reference_pixels": 1062377,
+      "missed": 2260,
+      "extra": 205
+    },
+    {
+      "frame": 25518,
+      "threshold": 0.122,
+      "reference_pixels": 328151,
+      "missed": 2581,
+      "extra": 44
+    },
+    {
+      "frame": 27012,
+      "threshold": 0.03,
+      "reference_pixels": 41905,
+      "missed": 82,
+      "extra": 20
+    },
+    {
+      "frame": 27012,
+      "threshold": 0.122,
+      "reference_pixels": 13320,
+      "missed": 62,
+      "extra": 21
+    },
+    {
+      "frame": 28505,
+      "threshold": 0.03,
+      "reference_pixels": 1442334,
+      "missed": 4870,
+      "extra": 659
+    },
+    {
+      "frame": 28505,
+      "threshold": 0.122,
+      "reference_pixels": 502863,
+      "missed": 4491,
+      "extra": 974
+    },
+    {
+      "frame": 29999,
+      "threshold": 0.03,
+      "reference_pixels": 464226,
+      "missed": 3102,
+      "extra": 254
+    },
+    {
+      "frame": 29999,
+      "threshold": 0.122,
+      "reference_pixels": 85351,
+      "missed": 3052,
+      "extra": 161
+    },
+    {
+      "frame": 30240,
+      "threshold": 0.03,
+      "reference_pixels": 1266399,
+      "missed": 6702,
+      "extra": 129
+    },
+    {
+      "frame": 30240,
+      "threshold": 0.122,
+      "reference_pixels": 374591,
+      "missed": 10481,
+      "extra": 37
+    },
+    {
+      "frame": 31492,
+      "threshold": 0.03,
+      "reference_pixels": 335207,
+      "missed": 5577,
+      "extra": 1444
+    },
+    {
+      "frame": 31492,
+      "threshold": 0.122,
+      "reference_pixels": 19772,
+      "missed": 276,
+      "extra": 53
+    },
+    {
+      "frame": 32986,
+      "threshold": 0.03,
+      "reference_pixels": 753234,
+      "missed": 1538,
+      "extra": 4453
+    },
+    {
+      "frame": 32986,
+      "threshold": 0.122,
+      "reference_pixels": 61006,
+      "missed": 140,
+      "extra": 501
+    },
+    {
+      "frame": 34480,
+      "threshold": 0.03,
+      "reference_pixels": 232275,
+      "missed": 229,
+      "extra": 270
+    },
+    {
+      "frame": 34480,
+      "threshold": 0.122,
+      "reference_pixels": 60479,
+      "missed": 94,
+      "extra": 94
+    }
+  ],
+  "summary": {
+    "retinex": {
+      "mae": 0.024254159616499113,
+      "fraction_over_1pct": 0.6836012831257982,
+      "rmse": 0.033669934844260514,
+      "mean_frame_p99": 0.08477749495670714,
+      "maximum": 0.4214112162590027,
+      "frames": 29,
+      "regions": {
+        "dark": {
+          "pixels": 11085203,
+          "mae": 0.026306431345685864
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    },
+    "mask": {
+      "mae": 0.0005183881936506529,
+      "fraction_over_1pct": 0.002083266815666241,
+      "rmse": 0.0012319486548470124,
+      "mean_frame_p99": 0.004030486127233197,
+      "maximum": 0.07902652025222778,
+      "frames": 29,
+      "regions": {
+        "dark": {
+          "pixels": 11085203,
+          "mae": 0.0009796947271538548
+        }
+      },
+      "cpu_gpu_max_abs": 0.0
+    }
+  },
+  "passed": true
+}

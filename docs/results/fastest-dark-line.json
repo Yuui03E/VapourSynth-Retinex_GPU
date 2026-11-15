@@ -1,0 +1,8 @@
+{
+  "reference_pixels": 2354,
+  "reference_threshold": 0.03,
+  "candidate_threshold": 0.025,
+  "recall": 0.9787595581988106,
+  "source_line_contrast": 0.0006,
+  "bright_region_level": 0.6
+}
